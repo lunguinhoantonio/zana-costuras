@@ -53,28 +53,28 @@
                 <div class="div-medidas">
                     <h3 class="legendas-div">Medidas</h3>
                     <h4 class="legendas-input">Busto(cm)</h4>
-                    <input type="number" id="input-busto" maxlength="2" required>
+                    <input type="number" id="input-busto" min="1" max="99" maxlength="2" required>
                     <h4 class="legendas-input">Cintura(cm)</h4>
-                    <input type="number" id="input-cintura" maxlength="2" required>
+                    <input type="number" id="input-cintura" min="1" max="99" maxlength="2" required>
                     <h4 class="legendas-input">Quadril(cm)</h4>
-                    <input type="number" id="input-quadril" maxlength="2" required>
+                    <input type="number" id="input-quadril" min="1" max="99" maxlength="2" required>
                     <h4 class="legendas-input">Comprimento da perna(cm)</h4>
-                    <input type="number" id="input-comprimentoPerna" maxlength="2" required>
+                    <input type="number" id="input-comprimentoPerna" min="1" max="99" maxlength="2" required>
                     <h4 class="legendas-input">Comprimento do braço(cm)</h4>
-                    <input type="number" id="input-comprimentoBraco" maxlength="2" required>
+                    <input type="number" id="input-comprimentoBraco" min="1" max="99" maxlength="2" required>
                     <h4 class="legendas-input">Altura(cm)</h4>
-                    <input type="number" id="input-altura" maxlength="3" required>
+                    <input type="number" id="input-altura" min="1" max="200" maxlength="3" required>
                 </div>
                 <div class="div-orcamento">
                     <h3 class="legendas-div">Orçamento</h3>
-                    <h4 class="legendas-input">Solicitar orçamento
+                    <h4 class="legendas-input" id="legenda-checkboxOrcamento">Solicitar orçamento
                         <input type="checkbox" id="input-checkboxOrcamento">
                     </h4>
                     <h4 class="legendas-input">Observações adicionais</h4>
                     <input type="text" id="input-infoAdd">
                 </div>
+                <button onclick="">Enviar</button>
             </div>
-            <button onclick="">Enviar</button>
         </main>
         <footer>
             <a href="https://www.instagram.com/zana.costuras/" target="_blank">
