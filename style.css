@@ -55,7 +55,6 @@ main {
     padding: 2rem;
     margin: 12px;
     box-shadow: 10px 10px 5px #aaaaaa;
-    transition: 1000ms;
 }
 
 .legendas-div {
@@ -108,7 +107,7 @@ main {
 }
 #input-nomeCompleto, 
 #input-email, 
-#input-telefon::placeholder {
+#input-telefone::placeholder {
     font-weight: 500;
 }
 
@@ -131,13 +130,15 @@ button:hover {
 
 footer {
     display: flex;
-    flex-direction: flex-end;
+    justify-content: space-between;
 }
+
 footer a {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
+
 footer a:hover {
     color: #E9B8B1;
     transition: 250ms;
