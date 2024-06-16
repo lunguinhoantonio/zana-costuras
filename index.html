@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/logo_preview.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Zana Costuras</title>
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo-zana-costuras.png" alt="Logo da Zana Costuras">
+        </header>
+        <nav>
+            <h2>Faça sua encomenda</h2>
+        </nav>
+        <main>
+            <div class="wrapper">
+                <div class="div-infoClientes">
+                    <h3 class="legendas-div">Informações do Cliente</h3>
+                    <h4 class="legendas-input" id="nomeCompleto">Nome Completo</h4>
+                    <input type="text" id="input-nomeCompleto" placeholder="Insira seu nome completo" required>
+                    <h4 class="legendas-input" id="telefone">Telefone</h4>
+                    <input type="tel" id="input-telefone" maxlength="11" placeholder="(XX)XXXXX-XXXX" required>
+                    <h4 class="legendas-input" id="email">E-mail</h4>
+                    <input type="email" id="input-email" placeholder="exemplo@exemplo.com" required>
+                    <h4 class="legendas-input">Endereço</h4>
+                    <input type="text" id="input-endereco">
+                </div>
+
+                <div class="div-detalhesPedido">
+                    <h3 class="legendas-div">Detalhes do Pedido</h3>
+                    <h4 class="legendas-input">Tipos de Serviço</h4>
+                    <select id="input-tiposServico">
+                        <option value="Conserto" selected>Conserto</option>
+                        <option value="Confecção">Confecção</option>
+                        <option value="opção 3">Opção extra 1</option>
+                        <option value="opção 4">Opção extra 2</option>
+                    </select>
+                    <h4 class="legendas-input">Tipo de Roupas</h4>
+                    <select id="input-tiposRoupas">
+                        <option value="Vestido" selected>Vestido</option>
+                        <option value="Blusa">Blusa</option>
+                        <option value="Camisa">Camisa</option>
+                        <option value="Regata">Regata</option>
+                        <option value="Calça">Calça</option>
+                        <option value="Short">Short</option>
+                    </select>
+                    <h4 class="legendas-input">Descrição do Pedido</h4>
+                    <input type="text" id="input-descricaoPedido">
+                </div>
+
+                <div class="div-medidas">
+                    <h3 class="legendas-div">Medidas</h3>
+                    <h4 class="legendas-input">Busto(cm)</h4>
+                    <input type="number" id="input-busto" maxlength="2" required>
+                    <h4 class="legendas-input">Cintura(cm)</h4>
+                    <input type="number" id="input-cintura" maxlength="2" required>
+                    <h4 class="legendas-input">Quadril(cm)</h4>
+                    <input type="number" id="input-quadril" maxlength="2" required>
+                    <h4 class="legendas-input">Comprimento da perna(cm)</h4>
+                    <input type="number" id="input-comprimentoPerna" maxlength="2" required>
+                    <h4 class="legendas-input">Comprimento do braço(cm)</h4>
+                    <input type="number" id="input-comprimentoBraco" maxlength="2" required>
+                    <h4 class="legendas-input">Altura(cm)</h4>
+                    <input type="number" id="input-altura" maxlength="3" required>
+                </div>
+                <div class="div-orcamento">
+                    <h3 class="legendas-div">Orçamento</h3>
+                    <h4 class="legendas-input">Solicitar orçamento
+                        <input type="checkbox" id="input-checkboxOrcamento">
+                    </h4>
+                    <h4 class="legendas-input">Observações adicionais</h4>
+                    <input type="text" id="input-infoAdd">
+                </div>
+            </div>
+            <button onclick="">Enviar</button>
+        </main>
+        <footer>
+            <a href="https://www.instagram.com/zana.costuras/" target="_blank">
+                <img src="images/image_instagram.png" alt="Logo Instagram" width="32" height="32">
+                Instagram
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+5571900000000000&text=Olá%20Rosana!%20Me%20chamo%20[cliente]." target="_blank">
+                <img src="images/image_whatsapp.png" alt="Logo WhatsApp" width="32" height="32">
+                WhatsApp
+            </a>
+        </footer>
+    </body>
+    </html>

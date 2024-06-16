@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: block;
+    justify-content: flex-start;
+    background-color: #E9B8B1;
+}
+
+header img {
+    width: 50%px;
+    height: 50%px;
+    margin: 1rem;
+}
+
+nav h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #F4E4D5;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main {
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.div-infoClientes, 
+.div-detalhesPedido, 
+.div-medidas, 
+.div-orcamento {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 6px;
+    background-color: #B0AE99;
+    padding: 1rem;
+    margin: 12px;
+}
+
+#input-busto, 
+#input-cintura, 
+#input-quadril, 
+#input-comprimentoPerna, 
+#input-comprimentoBraco, 
+#input-altura {
+    width: 30%;
+    border-radius: 6px;
+}
+
+#input-telefone {
+    width: 47%;
+    border-radius: 6px;
+}
+
+#input-tiposServico, 
+#input-tiposRoupas {
+    width: 60%;
+    border-radius: 6px
+}
+#input-email {
+    width: 90%;
+    border-radius: 6px;
+}
+
+#input-descricaoPedido, 
+#input-endereco {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#input-checkboxOrcamento {
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 0px 5%;
+}
+
+.legendas-div {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: flex-end;
+}
