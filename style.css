@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -36,11 +37,11 @@ main {
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    align-items: baseline;*/
+    display: grid;
 }
 
 .div-infoClientes, 
@@ -89,7 +90,8 @@ main {
 }
 
 #input-descricaoPedido, 
-#input-endereco {
+#input-endereco,
+#input-infoAdd {
     width: 100%;
     border-radius: 6px;
 }
@@ -111,16 +113,22 @@ main {
     font-weight: 500;
 }
 
-button {
+#input-descricaoPedido, 
+#input-infoAdd {
+    padding: 0px 0px 72px;
+}
+
+main button {
     display: flex;
     border: none;
     cursor: pointer;
     border-radius: 8px;
     background-color: #E9B8B1;
+    transition: 350ms;
     padding: 1% 5%;
-    font-size: 1.5rem;
+    font-size: 150%;
     gap: 8px;
-    margin: 12px;
+    margin: 12px auto 0px;
     box-shadow: 5px 5px 5px #aaaaaa;
 }
 button:hover {
@@ -129,8 +137,7 @@ button:hover {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    margin: 2rem 0px 0px;
 }
 
 footer a {
@@ -140,6 +147,43 @@ footer a {
 }
 
 footer a:hover {
-    color: #E9B8B1;
-    transition: 250ms;
+
+    transition: ease-in 250ms;
+}
+
+.social-links {
+    display: flex;
+    background-color: #F4E4D5;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-around;
+    padding-top: 6px;
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E9B8B1;
+    font: 350 18px/100% 'inter', sans-serif;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1081px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1080px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
