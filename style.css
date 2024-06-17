@@ -137,7 +137,8 @@ button:hover {
 }
 
 footer {
-    margin: 2rem 0px 0px;
+    height: 100%;
+    margin: 6rem 0px 0px;
 }
 
 footer a {
@@ -147,7 +148,6 @@ footer a {
 }
 
 footer a:hover {
-
     transition: ease-in 250ms;
 }
 
