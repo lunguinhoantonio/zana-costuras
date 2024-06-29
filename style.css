@@ -107,15 +107,19 @@ main {
     display: flex;
     align-items: center;
 }
-#input-nomeCompleto, 
-#input-email, 
-#input-telefone::placeholder {
-    font-weight: 500;
-}
 
 #input-descricaoPedido, 
 #input-infoAdd {
     padding: 0px 0px 72px;
+}
+#input-nomeCompleto,
+#input-telefone,
+#input-email,
+#input-endereco,
+#input-descricaoPedido,
+#input-infoAdd::placeholder {
+    font-weight: 500;
+    padding-left: 4px;
 }
 
 main button {
